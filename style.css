@@ -55,16 +55,28 @@ body{
 .about-title {
     font-family: 'Oswald', sans-serif;
     font-size: 150px;
+    font-weight: 500;
     opacity: 8%;
     position: absolute;
     top: 30vh;
     right: 20px;
 }
 
+@keyframes about-title {
+    to {
+      right: 120px;
+    }
+  }
+
 .about-text {
     position: absolute;
     top: 39vh;
     left: 900px;
+}
+@keyframes about-text {
+    to {
+        left: 200px;
+    }
 }
 
 .info-text{
@@ -100,6 +112,6 @@ body{
   }
 
   .projects{
-    background-color: rgb(30, 30, 30);
-    /* height: 500vh; */
+    /* background-color: rgb(30, 30, 30); */
+    height: 500vh;
   }
