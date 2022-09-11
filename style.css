@@ -89,21 +89,6 @@ body{
     }
   }
   
-  .projects {
-    height: 3px;
-    width: 0%;
-    background-color: rgb(30, 30, 30);
-    position: fixed;
-    top: 0;
-    left: 0;
-    animation: project 1s linear;
-  }
-  @keyframes projects {
-    to {
-      background-color: rgb(30, 30, 30);
-      width: 100%;
-    }
-  }
   
   :root * {
     /* Pause the animation */
