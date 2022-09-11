@@ -12,7 +12,7 @@
 }
 
 header {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+    /* animation: 1s ease-out 0s 1 slideInFromLeft; */
     padding: 30px;
     font-family: 'Roboto Mono', monospace;
 }
@@ -47,12 +47,10 @@ body{
     user-select: none;
 }
 .about-me {
-    min-height: 120vh;
+    min-height: 130vh;
     position: relative;
 }
-.duh{
-    color: #757575;
-}
+
 
 .about-title {
     font-family: 'Oswald', sans-serif;
@@ -78,43 +76,41 @@ body{
 
 /* Portfolio Background Color change */
 
-.projects-body {
+.color-change {
     padding: 0;
     margin: 0;
-    min-height: 200vh;
-    background-color: rgb(139, 201, 228);
-    animation: body 1s linear;
+    min-height: 350vh;
+    background-color: rgb(255, 255, 255);
+    animation: color-change 1s linear;
   }
-  @keyframes body {
+  @keyframes color-change {
     to {
-      background-color: rgb(19, 48, 97);
+      background-color: rgb(30, 30, 30);
     }
   }
   
   .projects {
     height: 3px;
     width: 0%;
-    background-color: #fff;
+    background-color: rgb(30, 30, 30);
     position: fixed;
     top: 0;
     left: 0;
-    animation: progress 1s linear;
+    animation: project 1s linear;
   }
   @keyframes projects {
     to {
-      background-color: rgb(20, 255, 226);
+      background-color: rgb(30, 30, 30);
       width: 100%;
     }
   }
-  
   
   :root * {
     /* Pause the animation */
     animation-play-state: paused;
     /* Bind the animation to scroll */
     animation-delay: calc(var(--scroll) * -1s);
-    /* These last 2 properites clean up overshoot weirdness */
+    /* These last 2 properties clean up overshoot weirdness */
     animation-iteration-count: 1;
     animation-fill-mode: both;
   }
-  
