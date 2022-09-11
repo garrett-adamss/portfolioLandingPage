@@ -89,7 +89,6 @@ body{
     }
   }
   
-  
   :root * {
     /* Pause the animation */
     animation-play-state: paused;
@@ -98,4 +97,9 @@ body{
     /* These last 2 properties clean up overshoot weirdness */
     animation-iteration-count: 1;
     animation-fill-mode: both;
+  }
+
+  .projects{
+    background-color: rgb(30, 30, 30);
+    /* height: 500vh; */
   }
