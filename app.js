@@ -111,13 +111,22 @@ let aboutTitle = document.getElementById('about-title')
 let aboutText = document.getElementById('about-text')
 
 window.addEventListener('scroll', function () {
-  let value = window.scrollY;
-  console.log("[value] :", value)
-  if (value <= 750) {
+  // let value = window.scrollY;
+  // console.log("[value in px] :", value)
+  // if (value <= 750) {
+  //   // @ts-ignore
+  //   aboutTitle.style.left = (value - 600) + 'px'
+  //   // @ts-ignore
+  //   aboutText.style.right = (value - 1250) + 'px'
+  // }
+  let value = (100 * (window.scrollY)) / window.innerHeight
+  console.log("[value in vw] :", value)
+  if (value <= 40) {
     // @ts-ignore
     aboutTitle.style.left = (value - 600) + 'px'
     // @ts-ignore
     aboutText.style.right = (value - 1250) + 'px'
   }
-
+  
+    
 })
