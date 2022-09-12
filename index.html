@@ -26,6 +26,11 @@
     </header>
 
     <main>
+            <!-- SECTION Github/LinkedIn -->
+            <div class="row logos">
+                <a href="https://github.com/garrett-adamss"><img class="logo-img m-2" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></a>
+                <a href="https://www.linkedin.com/in/garrett-adamss/"><img class="logo-img m-2" src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"></a>
+            </div>
             <!-- SECTION Home -->
             <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
                 <h3>Hi, I'm Garrett</h3>
@@ -36,21 +41,47 @@
             <!--SECTION About Me -->
             <div id="AboutMe" class="container-fluid about-me">
                 <div class="row">
-                    <h1 class="about-title">ABOUT ME</h1>
-                    <p class="about-text"><spanText>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
-                        deleniti temporibus
-                        modi eos
-                        facere, id qui dolorum, quos, assumenda placeat magni. Tempora, culpa sed. Esse magnam inventore
-                        explicabo maxime autem.</spanText></p>
+                    <h1 class="about-title" id="about-title">ABOUT ME</h1>
+                    <p class="about-text" id="about-text"></p>
                 </div>
             </div>
         <!-- SECTION Projects -->
         <div id="Projects" class="projects">
             <h1> Trackr</h1>
         </div>
+        <!-- SECTION Contact -->
+        <div class="contact container-fluid">
+            <h1 class="d-flex justify-content-center p-2"><b>Contact</b></h1>
+            <div class="row justify-content-center p-1">
+                <img class="col-1" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png" alt="phone">
+                <h4 class="col-3">562-293-8735</h4>
+            </div>
+            <div class="row justify-content-center p-1">
+                <img class="offset-md-3 col-md-1"
+                    src="https://www.pngall.com/wp-content/uploads/2016/05/Phone-Download-PNG.png" alt="email">
+                <h4 class="col-md-6">garrettadams27@gmail.com</h4>
+            </div>
+            <form>
+                <div class="d-flex justify-content-center p-1">
+                    <input class="form-size" type="text" id="name" name="name" placeholder="Email">
+                </div>
+                <div class="d-flex justify-content-center p-1">
+                    <textarea class="form-size" type="email" id="message" name="message" placeholder="Message" maxlength="500"></textarea>
+                </div>
+                <div class="d-flex justify-content-center p-1">
+                    <button class="btn btn-outline-secondary" type="submit">submit</button>
+                </div>
+            </form>
+        </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="row align-items-center justify-content-around p-3">
+            <a href="https://www.linkedin.com/in/garrett-adamss/" class="footer-title col-4 text-center">LinkedIn</a>
+            <a href="https://github.com/garrett-adamss" class="footer-title col-4 text-center">Github</a>
+            <a href="https://www.instagram.com/garrett.adamsss/" class="footer-title col-4 text-center">Instagram</a>
+          </div>
+    </footer>
 
 
 

@@ -37,7 +37,7 @@ class TextScramble {
       if (this.frame >= end) {
         complete++
         output += to
-      // @ts-ignore
+        // @ts-ignore
       } else if (this.frame >= start) {
         if (!char || Math.random() < 0.28) {
           char = this.randomChar()
@@ -69,11 +69,11 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-  'with an eagerness to learn',
   'with an eye for design',
   'looking for an opportunity',
+  'with an eagerness to learn',
   'that loves a challenge',
-  'who always learning something new'
+  'who\'s always learning something new'
 
 ]
 
@@ -95,14 +95,29 @@ next()
 // Background Color Scroll
 // ——————————————————————————————————————————————————
 
-window.addEventListener(
-  "scroll",
-  () => {
-    document.body.style.setProperty(
-      "--scroll",
-      // @ts-ignore
-      window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
-    );
-  },
-  false
-)
+// window.addEventListener(
+//   "scroll",
+//   () => {
+//     document.body.style.setProperty(
+//       "--scroll",
+//       // @ts-ignore
+//       window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+//     );
+//   },
+//   false
+// )
+
+let aboutTitle = document.getElementById('about-title')
+let aboutText = document.getElementById('about-text')
+
+window.addEventListener('scroll', function () {
+  let value = window.scrollY;
+  console.log("[value] :", value)
+  if (value <= 750) {
+    // @ts-ignore
+    aboutTitle.style.left = (value - 650) + 'px'
+    // @ts-ignore
+    aboutText.style.right = (value - 1300) + 'px'
+  }
+
+})

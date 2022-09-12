@@ -46,6 +46,7 @@ body{
     text-align: center;
     user-select: none;
 }
+/* SECTION About Me */
 .about-me {
     min-height: 130vh;
     position: relative;
@@ -62,22 +63,22 @@ body{
     right: 20px;
 }
 
-@keyframes about-title {
+/* @keyframes about-title {
     to {
       right: 120px;
     }
-  }
+  } */
 
 .about-text {
     position: absolute;
     top: 39vh;
-    left: 900px;
+    right: -90px;
 }
-@keyframes about-text {
+/* @keyframes about-text {
     to {
         left: 200px;
     }
-}
+} */
 
 .info-text{
     font-size: 20px;
@@ -88,7 +89,7 @@ body{
 
 /* Portfolio Background Color change */
 
-.color-change {
+/* .color-change {
     padding: 0;
     margin: 0;
     min-height: 350vh;
@@ -99,19 +100,49 @@ body{
     to {
       background-color: rgb(30, 30, 30);
     }
-  }
+  } */
   
-  :root * {
-    /* Pause the animation */
+  /* :root * {
+    Pause the animation
     animation-play-state: paused;
-    /* Bind the animation to scroll */
+    Bind the animation to scroll
     animation-delay: calc(var(--scroll) * -1s);
-    /* These last 2 properties clean up overshoot weirdness */
+    These last 2 properties clean up overshoot weirdness
     animation-iteration-count: 1;
     animation-fill-mode: both;
-  }
+  } */
 
   .projects{
     /* background-color: rgb(30, 30, 30); */
     height: 500vh;
   }
+
+  /* SECTION Contact */
+.contact{ 
+    min-height: 70vh;
+}
+img {
+    height: 2.3em;
+    object-fit: scale-down;
+    object-position: center;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+.form-size{
+    width: 43%;
+}
+textarea{
+    resize: none;
+}
+
+/* SECTION Github/LinkedIn */
+.logo-img{
+    height: 3.3em;   
+}
+.logos{
+    position: fixed;
+    top: 75vh;
+    left: 1vw;
+    opacity: 55%;
+}
