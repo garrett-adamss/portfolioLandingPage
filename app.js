@@ -115,9 +115,9 @@ window.addEventListener('scroll', function () {
   console.log("[value] :", value)
   if (value <= 750) {
     // @ts-ignore
-    aboutTitle.style.left = (value - 650) + 'px'
+    aboutTitle.style.left = (value - 600) + 'px'
     // @ts-ignore
-    aboutText.style.right = (value - 1300) + 'px'
+    aboutText.style.right = (value - 1250) + 'px'
   }
 
 })

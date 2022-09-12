@@ -57,28 +57,18 @@ body{
     font-family: 'Oswald', sans-serif;
     font-size: 150px;
     font-weight: 500;
-    opacity: 8%;
+    opacity: 7%;
     position: absolute;
-    top: 30vh;
+    top: 25%;
     right: 20px;
 }
 
-/* @keyframes about-title {
-    to {
-      right: 120px;
-    }
-  } */
-
 .about-text {
     position: absolute;
-    top: 39vh;
+    top: 29%;
     right: -90px;
+    font-size: 17px;
 }
-/* @keyframes about-text {
-    to {
-        left: 200px;
-    }
-} */
 
 .info-text{
     font-size: 20px;
