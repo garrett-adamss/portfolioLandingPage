@@ -121,11 +121,11 @@ window.addEventListener('scroll', function () {
   // }
   let value = (100 * (window.scrollY)) / window.innerHeight
   console.log("[value in vw] :", value)
-  if (value <= 40) {
+  if (value <= 90) {
     // @ts-ignore
-    aboutTitle.style.left = (value - 600) + 'px'
+    aboutTitle.style.left = ((value * .15)) + 'vw'
     // @ts-ignore
-    aboutText.style.right = (value - 1250) + 'px'
+    aboutText.style.right = ((value * .15)+ 50) + 'vw'
   }
   
     
