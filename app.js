@@ -5,7 +5,8 @@
 class TextScramble {
   constructor(el) {
     this.el = el
-    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    // this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    this.chars = 'asdfghjklqwertyuiopzxcv'
     this.update = this.update.bind(this)
   }
   setText(newText) {
@@ -125,7 +126,7 @@ window.addEventListener('scroll', function () {
     // @ts-ignore
     aboutTitle.style.left = ((value * .15)) + 'vw'
     // @ts-ignore
-    aboutText.style.right = ((value * .15)+ 50) + 'vw'
+    aboutText.style.right = ((value * .15) - 2.5 ) + 'vw'
   }
   
     

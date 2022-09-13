@@ -1,15 +1,6 @@
 @import "./assets/scss/main.scss";
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
 
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
 
 header {
     /* animation: 1s ease-out 0s 1 slideInFromLeft; */
@@ -20,7 +11,6 @@ header {
 a {
     color: black;
     text-decoration: none;
-    /* font-weight: 600!important; */
 }
 a:hover{
     color: black;
@@ -31,10 +21,6 @@ main {
 
 footer {
     font-family: 'Roboto Mono', monospace;
-
-    /* a {
-    color: black;
-  } */
 }
 body{
     overflow-x: hidden;
@@ -46,12 +32,12 @@ body{
     text-align: center;
     user-select: none;
 }
+
 /* SECTION About Me */
 .about-me {
-    min-height: 130vh;
+    min-height: 115vh;
     position: relative;
 }
-
 
 .about-title {
     font-family: 'Oswald', sans-serif;
@@ -61,7 +47,6 @@ body{
     position: absolute;
     top: 25%;
     left: -40vw;
-
 }
 
 .about-text {
@@ -77,36 +62,12 @@ body{
 .title-text{
     font-weight: 600;
 }
-
-/* Portfolio Background Color change */
-
-/* .color-change {
-    padding: 0;
-    margin: 0;
-    min-height: 350vh;
-    background-color: rgb(255, 255, 255);
-    animation: color-change 1s linear;
-  }
-  @keyframes color-change {
-    to {
-      background-color: rgb(30, 30, 30);
-    }
-  } */
-  
-  /* :root * {
-    Pause the animation
-    animation-play-state: paused;
-    Bind the animation to scroll
-    animation-delay: calc(var(--scroll) * -1s);
-    These last 2 properties clean up overshoot weirdness
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-  } */
+    /* SECTION Projects */
 
   .projects{
-    /* background-color: rgb(30, 30, 30); */
     height: 500vh;
   }
+  
 
   /* SECTION Contact */
 .contact{ 
