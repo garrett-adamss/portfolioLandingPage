@@ -76,12 +76,23 @@ body{
   .project-one-title{
     position: absolute;
     top: 2.3vh;
-    right: -45px;
+    left: 2.97vw;
   }
   .project-one-type{
     position: absolute;
     top: 65vh;
-    right: -45px;
+    left: 18vw;
+  }
+
+  .project-one-source{
+    position: absolute;
+    top: 10vh;
+    left: 36.5vw;
+  }
+  .project-one-visit{
+    position: absolute;
+    top: 50vh; 
+    left: 5vw
   }
 
   /* SECTION Skills */

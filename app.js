@@ -112,6 +112,8 @@ let aboutTitle = document.getElementById('about-title')
 let aboutText = document.getElementById('about-text')
 let projectOneTitle = document.getElementById('project-one-title')
 let projectOneType = document.getElementById('project-one-type')
+let projectOneSource = document.getElementById('project-one-source')
+let projectOneVisit = document.getElementById('project-one-visit')
 
 window.addEventListener('scroll', function () {
   let pxValue = window.scrollY;
@@ -138,6 +140,11 @@ window.addEventListener('scroll', function () {
     projectOneTitle.style.top = ((viewValue - 205) + 2.3) + 'vh';
     // @ts-ignore
     projectOneType.style.top = ((viewValue - 205)+ 60) + 'vh';
+    // @ts-ignore
+    projectOneSource.style.top = ((viewValue - 205) + 10) + 'vh';
+    // @ts-ignore
+    projectOneVisit.style.top = ((viewValue - 205) + 50) + 'vh';
+
   }
   // if vh is = to vh of project-one, project title = value - value = it stays in plac
 })
