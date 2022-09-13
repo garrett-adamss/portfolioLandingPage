@@ -110,24 +110,34 @@ next()
 
 let aboutTitle = document.getElementById('about-title')
 let aboutText = document.getElementById('about-text')
+let projectOneTitle = document.getElementById('project-one-title')
+let projectOneType = document.getElementById('project-one-type')
 
 window.addEventListener('scroll', function () {
-  // let value = window.scrollY;
-  // console.log("[value in px] :", value)
-  // if (value <= 750) {
+  let pxValue = window.scrollY;
+  console.log("[pxValue in px] :", pxValue)  
+  // if (pxValue >= 1735 && pxValue < 4400) {
   //   // @ts-ignore
-  //   aboutTitle.style.left = (value - 600) + 'px'
+  //   projectOneTitle.style.top = (pxValue - 1735) + 'px';
   //   // @ts-ignore
-  //   aboutText.style.right = (value - 1250) + 'px'
+  //   projectOneType.style.top = (pxValue - 1735) + 'px';
   // }
-  let value = (100 * (window.scrollY)) / window.innerHeight
-  console.log("[value in vw] :", value)
-  if (value <= 90) {
+
+  let viewValue = (100 * (window.scrollY)) / window.innerHeight
+  console.log("[viewValue in vh] :", viewValue)
+  // ABOUT
+  if (viewValue <= 90) {
     // @ts-ignore
-    aboutTitle.style.left = ((value * .15)) + 'vw'
+    aboutTitle.style.left = ((viewValue * .15)) + 'vw'
     // @ts-ignore
-    aboutText.style.right = ((value * .15) - 2.5 ) + 'vw'
+    aboutText.style.right = ((viewValue * .15) - 2.5 ) + 'vw'
   }
-  
-    
+  //PROJECT ONE
+  if (viewValue >= 205 && viewValue < 487) {
+    // @ts-ignore
+    projectOneTitle.style.top = ((viewValue - 205) + 2.3) + 'vh';
+    // @ts-ignore
+    projectOneType.style.top = ((viewValue - 205)+ 60) + 'vh';
+  }
+  // if vh is = to vh of project-one, project title = value - value = it stays in plac
 })

@@ -47,6 +47,7 @@ body{
     position: absolute;
     top: 25%;
     left: -40vw;
+    user-select: none;
 }
 
 .about-text {
@@ -64,10 +65,29 @@ body{
 }
     /* SECTION Projects */
 
+    /* Titles are position absolute to the parents div  */
   .projects{
     height: 500vh;
   }
-  
+  .project-one{
+    height: 100vh;
+    position: relative;
+  }
+  .project-one-title{
+    position: absolute;
+    top: 2.3vh;
+    right: -45px;
+  }
+  .project-one-type{
+    position: absolute;
+    top: 65vh;
+    right: -45px;
+  }
+
+  /* SECTION Skills */
+  .skills{
+    height: 400vh;
+  }
 
   /* SECTION Contact */
 .contact{ 
