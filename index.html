@@ -22,9 +22,10 @@
 
     <header>
         <div class="header row align-items-center">
-            <h2 class="col-9 title"><b>Portfolio</b></h2>
+            <h2 class="col-8 title"><b>Portfolio</b></h2>
             <a href="#AboutMe" class="nav-title tags col-1">About me</a>
             <a href="#Projects" class="nav-title tags col-1">Projects</a>
+            <a href="#Skills" class="nav-title tags col-1">Skills</a>
             <a href="#Contact" class="nav-title tags col-1">Contact</a>
         </div>
     </header>
@@ -44,7 +45,6 @@
             <!-- <div class="text"></div> -->
             <p class="info-text">A developer <span class="text"></span></p>
         </div>
-        <img src="photos/inspire-home.png">
         <!--SECTION About Me -->
         <div id="AboutMe" class="container-fluid about-me">
             <div class="row">
@@ -59,19 +59,64 @@
             </div>
         </div>
         <!-- SECTION Projects -->
+        <!-- Project One -->
         <div id="Projects" class="projects">
             <div class="project-one">
                 <div class="row">
                     <h1 id="project-one-title" class="project-one-title"> Trackr</h1>
-                    <a id="project-one-source" class="project-one-source" href="https://github.com/garrett-adamss/Trackr"><h5>&lt;source code/&gt;</h5></a>
-                    <a id="project-one-visit" class="project-one-visit">Visit Site</a>
+                    <p id="project-one-description" class="project-one-description col-5">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Sapiente inventore molestias, tenetur quidem vitae voluptates
+                        voluptatum tempore blanditiis optio, esse officia odio eum itaque quam adipisci iusto
+                        distinctio, expedita impedit.</p>
+                    <a id="project-one-source" class="project-one-source"
+                        href="https://github.com/garrett-adamss/Trackr">
+                        <h5>&lt;source code/&gt;</h5>
+                    </a>
+                    <a id="project-one-visit" class="project-one-visit">
+                        <h5>Visit Site</h5>
+                    </a>
                     <h3 id="project-one-type" class="project-one-type">Full-Stack Web Application</h3>
-                    <h1 class="col-md-6 offset-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis alias obcaecati adipisci qui reiciendis. Nesciunt eveniet consectetur quod corrupti maxime fuga sed. Sit, quam. Eius ullam eos cum nemo nesciunt, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam repudiandae aperiam nam, facilis explicabo soluta natus voluptatem impedit commodi laboriosam vel dicta omnis amet quod odit error sed maiores! Fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, sapiente in et repudiandae at officia inventore architecto tempore aliquid iste nemo consequatur quaerat. Totam adipisci quia vel laudantium, eum architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis alias obcaecati adipisci qui reiciendis. Nesciunt eveniet consectetur quod corrupti maxime fuga sed. Sit, quam. Eius ullam eos cum nemo nesciunt, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam repudiandae aperiam nam, facilis explicabo soluta natus voluptatem impedit commodi laboriosam vel dicta omnis amet quod odit error sed maiores! Fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, sapiente in et repudiandae at officia inventore architecto tempore aliquid iste nemo consequatur quaerat. Totam adipisci quia vel laudantium, eum architecto! Eius ullam eos cum nemo nesciunt, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam repudiandae aperiam nam, facilis explicabo soluta natus voluptatem impedit commodi laboriosam vel dicta omnis amet quod odit error sed maiores! Fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, sapiente in et repudiandae at officia inventore architecto tempore aliquid iste nemo consequatur quaerat.</h1>
+                    <div class="col-md-6 offset-md-6 project-one-photos">
+                        <!-- NOTE Order in reverse for correct layering & CSS + JavaScript reasons 
+                                    one is the top photo and four is the bottom photo -->
+                        <img class="project-one-img-four" id="project-one-img-four" src="photos/inspire-home.png">
+                        <img class="project-one-img-three" id="project-one-img-three" src="photos/inspire-home.png">
+                        <img class="project-one-img-two" id="project-one-img-two" src="photos/inspire-home.png">
+                        <img class="project-one-img-one" id="project-one-img-one" src="photos/inspire-home.png">
+                    </div>
                 </div>
             </div>
+        </div>
 
+        <!-- Project Two -->
+        <div id="Projects" class="projects">
+            <div class="project-two">
+                <div class="row">
+                    <h1 id="project-two-title" class="project-two-title"> Trackr</h1>
+                    <p id="project-two-description" class="project-two-description col-5">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Sapiente inventore molestias, tenetur quidem vitae voluptates
+                        voluptatum tempore blanditiis optio, esse officia odio eum itaque quam adipisci iusto
+                        distinctio, expedita impedit.</p>
+                    <a id="project-two-source" class="project-two-source"
+                        href="https://github.com/garrett-adamss/Trackr">
+                        <h5>&lt;source code/&gt;</h5>
+                    </a>
+                    <a id="project-two-visit" class="project-two-visit">
+                        <h5>Visit Site</h5>
+                    </a>
+                    <h3 id="project-two-type" class="project-two-type">Full-Stack Web Application</h3>
+                    <div class="col-md-6 offset-md-6 project-two-photos">
+                        <!-- NOTE Order in reverse for correct layering & CSS + JavaScript reasons 
+                                    two is the top photo and four is the bottom photo -->
+                        <img class="project-two-img-four" id="project-two-img-four" src="photos/inspire-home.png">
+                        <img class="project-two-img-three" id="project-two-img-three" src="photos/inspire-home.png">
+                        <img class="project-two-img-two" id="project-two-img-two" src="photos/inspire-home.png">
+                        <img class="project-two-img-one" id="project-two-img-one" src="photos/inspire-home.png">
+                    </div>
+                </div>
             </div>
         </div>
+        
         <!-- SECTION My Skills -->
         <div class="skills container-fluid">
 

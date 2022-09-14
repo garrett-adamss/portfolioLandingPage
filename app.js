@@ -1,7 +1,5 @@
-// ——————————————————————————————————————————————————
-// TextScramble
-// ——————————————————————————————————————————————————
 
+// SECTION Text Scramble
 class TextScramble {
   constructor(el) {
     this.el = el
@@ -65,10 +63,7 @@ class TextScramble {
   }
 }
 
-// ——————————————————————————————————————————————————
-// TEXT
-// ——————————————————————————————————————————————————
-
+// Text
 const phrases = [
   'with an eye for design',
   'looking for an opportunity',
@@ -91,39 +86,38 @@ const next = () => {
 
 next()
 
+//SECTION Parallax Scrolls
 
-// ——————————————————————————————————————————————————
-// Background Color Scroll
-// ——————————————————————————————————————————————————
-
-// window.addEventListener(
-//   "scroll",
-//   () => {
-//     document.body.style.setProperty(
-//       "--scroll",
-//       // @ts-ignore
-//       window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
-//     );
-//   },
-//   false
-// )
-
+// About
 let aboutTitle = document.getElementById('about-title')
 let aboutText = document.getElementById('about-text')
+
+// Project Text 
 let projectOneTitle = document.getElementById('project-one-title')
 let projectOneType = document.getElementById('project-one-type')
 let projectOneSource = document.getElementById('project-one-source')
 let projectOneVisit = document.getElementById('project-one-visit')
+let projectOneDescription = document.getElementById('project-one-description')
+//Project Photos
+let projectOneImgOne = document.getElementById('project-one-img-one')
+let projectOneImgTwo = document.getElementById('project-one-img-two')
+let projectOneImgThree = document.getElementById('project-one-img-three')
+let projectOneImgFour = document.getElementById('project-one-img-four')
+
+// Project Text 
+let projectTwoTitle = document.getElementById('project-two-title')
+let projectTwoType = document.getElementById('project-two-type')
+let projectTwoSource = document.getElementById('project-two-source')
+let projectTwoVisit = document.getElementById('project-two-visit')
+let projectTwoDescription = document.getElementById('project-two-description')
+//Project Photos
+let projectTwoImgOne = document.getElementById('project-two-img-two')
+let projectTwoImgTwo = document.getElementById('project-two-img-two')
+let projectTwoImgThree = document.getElementById('project-two-img-three')
+let projectTwoImgFour = document.getElementById('project-two-img-four')
 
 window.addEventListener('scroll', function () {
-  let pxValue = window.scrollY;
-  console.log("[pxValue in px] :", pxValue)  
-  // if (pxValue >= 1735 && pxValue < 4400) {
-  //   // @ts-ignore
-  //   projectOneTitle.style.top = (pxValue - 1735) + 'px';
-  //   // @ts-ignore
-  //   projectOneType.style.top = (pxValue - 1735) + 'px';
-  // }
+  let pxValue = window.scrollY; //px
 
   let viewValue = (100 * (window.scrollY)) / window.innerHeight
   console.log("[viewValue in vh] :", viewValue)
@@ -132,19 +126,58 @@ window.addEventListener('scroll', function () {
     // @ts-ignore
     aboutTitle.style.left = ((viewValue * .15)) + 'vw'
     // @ts-ignore
-    aboutText.style.right = ((viewValue * .15) - 2.5 ) + 'vw'
+    aboutText.style.right = ((viewValue * .15) - 2.5) + 'vw'
   }
   //PROJECT ONE
-  if (viewValue >= 205 && viewValue < 487) {
-    // @ts-ignore
-    projectOneTitle.style.top = ((viewValue - 205) + 2.3) + 'vh';
-    // @ts-ignore
-    projectOneType.style.top = ((viewValue - 205)+ 60) + 'vh';
-    // @ts-ignore
-    projectOneSource.style.top = ((viewValue - 205) + 10) + 'vh';
-    // @ts-ignore
-    projectOneVisit.style.top = ((viewValue - 205) + 50) + 'vh';
-
+  if (viewValue >= 205 && viewValue < 340) {
+    { // NOTE Text
+      // @ts-ignore Title
+      projectOneTitle.style.top = ((viewValue - 205) + 2.3) + 'vh';
+      // @ts-ignore Desc
+      projectOneDescription.style.top = ((viewValue - 205) + 10) + 'vh';
+      // @ts-ignore Type
+      projectOneType.style.top = ((viewValue - 205) + 60) + 'vh';
+      // @ts-ignore Source
+      projectOneSource.style.top = ((viewValue - 205) + 56) + 'vh';
+      // @ts-ignore Visit
+      projectOneVisit.style.top = ((viewValue - 205) + 52) + 'vh';
+    }
+    {
+      // @ts-ignore Title //56
+      projectOneImgOne.style.top = (((viewValue) * .3) - ((205 * .3) - 25)) + 'vh';
+      // @ts-ignore Title //61
+      projectOneImgTwo.style.top = (((viewValue) * .25) - ((205 * .25) - 81)) + 'vh'
+      // @ts-ignore Title //31
+      projectOneImgThree.style.top = (((viewValue) * .4) - ((205 * .4) - 51)) + 'vh'
+      // @ts-ignore Title //104
+      projectOneImgFour.style.top = (((viewValue) * .45) - ((205 * .45) - 94)) + 'vh'
+    }
   }
-  // if vh is = to vh of project-one, project title = value - value = it stays in plac
+
+  //Project Two
+  if (viewValue >= 427 && viewValue < 562) {
+    console.log("RUNNING PROJECT TWO");
+    { // NOTE Text
+      // @ts-ignore Title
+      projectTwoTitle.style.top = ((viewValue - 427) + 5.3) + 'vh';
+      // @ts-ignore Desc
+      projectTwoDescription.style.top = ((viewValue - 427) + 13) + 'vh';
+      // @ts-ignore Type
+      projectTwoType.style.top = ((viewValue - 427) + 60) + 'vh';
+      // @ts-ignore Source
+      projectTwoSource.style.top = ((viewValue - 427) + 56) + 'vh';
+      // @ts-ignore Visit
+      projectTwoVisit.style.top = ((viewValue - 427) + 52) + 'vh';
+    }
+    {
+      // @ts-ignore Title //56
+      projectTwoImgOne.style.top = (((viewValue) * .3) - ((427 * .3) - 25)) + 'vh';
+      // @ts-ignore Title //61
+      projectTwoImgTwo.style.top = (((viewValue) * .25) - ((427 * .25) - 81)) + 'vh'
+      // @ts-ignore Title //31
+      projectTwoImgThree.style.top = (((viewValue) * .4) - ((427 * .4) - 51)) + 'vh'
+      // @ts-ignore Title //104
+      projectTwoImgFour.style.top = (((viewValue) * .45) - ((427 * .45) - 94)) + 'vh'
+    }
+  }
 })
