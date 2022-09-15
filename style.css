@@ -77,39 +77,30 @@ body {
 }
 
 .project-one {
-  height: 100vh;
+  height: 120vh;
+  padding-left: 10vh;
+  padding-top: 13vh;
+}
+
+.project-one-text{
   position: relative;
 }
 
-.project-one-title {
-  position: absolute;
-  top: 5.3vh;
-  left: 2.97vw;
-}
-
 .project-one-description {
-  position: absolute;
-  top: 13vh;
-  left: 2.97vw;
+  font-size: 20px;
 }
 
 .project-one-type {
-  position: absolute;
-  font-weight: 700;
-  top: 60vh;
-  left: 18vw;
+  font-size: 25px;
+  font-weight: 900;
 }
 
 .project-one-source {
-  position: absolute;
-  top: 56vh;
-  left: 35.5vw;
+  font-size: 20px;
 }
 
 .project-one-visit {
-  position: absolute;
-  top: 52vh;
-  left: 38.8vw;
+  font-size: 20px;
 }
 
 .project-one-photos {
@@ -147,6 +138,9 @@ body {
 
 .project-two {
   height: 100vh;
+}
+
+.project-two-text{
   position: relative;
 }
 
@@ -158,6 +152,7 @@ body {
 
 .project-two-description {
   position: absolute;
+  font-size: 20px;
   top: 10vh;
   left: 2.97vw;
 }
@@ -217,6 +212,12 @@ body {
 /* SECTION Skills */
 .skills {
   height: 160vh;
+}
+.scrolling-logo{
+  height: 10vh;
+  padding: 0px;
+  margin: 0px;
+  opacity: 35%;
 }
 
 /* SECTION Contact */
