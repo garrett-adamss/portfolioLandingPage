@@ -92,23 +92,26 @@ next()
 let aboutTitle = document.getElementById('about-title')
 let aboutText = document.getElementById('about-text')
 
-// Project Text 
+// Project Text One
 let projectOneText = document.getElementById('project-one-text')
 
-//Project Photos
+//Project Photos One
 let projectOneImgOne = document.getElementById('project-one-img-one')
 let projectOneImgTwo = document.getElementById('project-one-img-two')
 let projectOneImgThree = document.getElementById('project-one-img-three')
 let projectOneImgFour = document.getElementById('project-one-img-four')
 
-// Project Text 
+// Project Text Two
 let projectTwoText = document.getElementById('project-two-text')
 
-//Project Photos
+//Project Photos Two
 let projectTwoImgOne = document.getElementById('project-two-img-two')
 let projectTwoImgTwo = document.getElementById('project-two-img-two')
 let projectTwoImgThree = document.getElementById('project-two-img-three')
 let projectTwoImgFour = document.getElementById('project-two-img-four')
+
+//Skills 
+let skillsTitle = document.getElementById('skills-title')
 
 window.addEventListener('scroll', function () {
   let pxValue = window.scrollY; //px
@@ -123,12 +126,11 @@ window.addEventListener('scroll', function () {
     aboutText.style.right = ((viewValue * .15) - 2.5) + 'vw'
   }
   //PROJECT ONE
-  if (viewValue >= 205 && viewValue < 340) {
-    { // NOTE Text
+  if (viewValue >= 205 && viewValue < 360) {
+    { // NOTE //text
       // @ts-ignore
       projectOneText.style.top = ((viewValue - 205)) + 'vh'
-    }
-    {
+      //photos
       // @ts-ignore Title //56
       projectOneImgOne.style.top = (((viewValue) * .3) - ((205 * .3) - 25)) + 'vh';
       // @ts-ignore Title //61
@@ -139,23 +141,27 @@ window.addEventListener('scroll', function () {
       projectOneImgFour.style.top = (((viewValue) * .45) - ((205 * .45) - 94)) + 'vh'
     }
   }
-
   //Project Two
-  if (viewValue >= 427 && viewValue < 562) {
+  if (viewValue >= 447 && viewValue < 592) {
     console.log("RUNNING PROJECT TWO");
     { // NOTE Text
       // @ts-ignore
-      projectTwoText.style.top = ((viewValue - 427)) + 'vh'
-    }
-    {
+      projectTwoText.style.top = ((viewValue - 447)) + 'vh'
+      //photoe
       // @ts-ignore Title //56
-      projectTwoImgOne.style.top = (((viewValue) * .3) - ((427 * .3) - 25)) + 'vh';
+      projectTwoImgOne.style.top = ((viewValue * .3) - ((447 * .3) - 25)) + 'vh';
       // @ts-ignore Title //61
-      projectTwoImgTwo.style.top = (((viewValue) * .25) - ((427 * .25) - 81)) + 'vh'
+      projectTwoImgTwo.style.top = ((viewValue * .25) - ((447 * .25) - 81)) + 'vh'
       // @ts-ignore Title //31
-      projectTwoImgThree.style.top = (((viewValue) * .4) - ((427 * .4) - 51)) + 'vh'
+      projectTwoImgThree.style.top = ((viewValue * .4) - ((447 * .4) - 51)) + 'vh'
       // @ts-ignore Title //104
-      projectTwoImgFour.style.top = (((viewValue) * .45) - ((427 * .45) - 94)) + 'vh'
+      projectTwoImgFour.style.top = ((viewValue * .45) - ((447 * .45) - 94)) + 'vh'
     }
+  }
+  //SKILLS 
+  if (viewValue >= 650){
+    console.log("skills slider");
+    // @ts-ignore
+    skillsTitle.style.left = ((viewValue * .9)- ((650 * .9)+40)) + 'vw'
   }
 })

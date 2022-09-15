@@ -83,16 +83,22 @@ body {
 }
 
 .project-one-text{
+  font-family: 'Oswald', sans-serif;
   position: relative;
+}
+.project-one-title{
+ /* font-size: 20px; */
+ /* font-weight: 200; */
 }
 
 .project-one-description {
+
+  font-weight: 200;
   font-size: 20px;
 }
 
 .project-one-type {
   font-size: 25px;
-  font-weight: 900;
 }
 
 .project-one-source {
@@ -100,6 +106,7 @@ body {
 }
 
 .project-one-visit {
+  
   font-size: 20px;
 }
 
@@ -137,43 +144,30 @@ body {
 }
 
 .project-two {
-  height: 100vh;
+  height: 130vh;
+  padding-left: 10vh;
+  padding-top: 36vh;
 }
 
 .project-two-text{
   position: relative;
 }
 
-.project-two-title {
-  position: absolute;
-  top: 2.3vh;
-  left: 2.97vw;
-}
-
 .project-two-description {
-  position: absolute;
   font-size: 20px;
-  top: 10vh;
-  left: 2.97vw;
 }
 
 .project-two-type {
-  position: absolute;
-  font-weight: 700;
-  top: 60vh;
-  left: 18vw;
+  font-size: 25px;
+  font-weight: 900;
 }
 
 .project-two-source {
-  position: absolute;
-  top: 56vh;
-  left: 35.5vw;
+  font-size: 20px;
 }
 
 .project-two-visit {
-  position: absolute;
-  top: 52vh;
-  left: 38.8vw;
+  font-size: 20px;
 }
 
 .project-two-photos {
@@ -212,12 +206,18 @@ body {
 /* SECTION Skills */
 .skills {
   height: 160vh;
+  padding-top: 60vh;
+  position: relative;
 }
-.scrolling-logo{
-  height: 10vh;
-  padding: 0px;
-  margin: 0px;
-  opacity: 35%;
+.skills-title{
+  font-family: 'Oswald', sans-serif;
+  font-size: 150px;
+  font-weight: 500;
+  opacity: 7%;
+  position: absolute;
+  top: 50%;
+  left: -40vw;
+  user-select: none;
 }
 
 /* SECTION Contact */
