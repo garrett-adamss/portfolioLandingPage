@@ -36,28 +36,35 @@ body {
   text-align: center;
   user-select: none;
 }
+.title-text {
+  font-weight: 600;
+}
 
 /* SECTION About Me */
 .about-me {
   min-height: 115vh;
   position: relative;
 }
+.about-group {
+  padding-top: 20%;
+}
 
 .about-title {
   font-family: 'Oswald', sans-serif;
-  font-size: 150px;
+  font-size: 185px;
   font-weight: 500;
   opacity: 7%;
   position: absolute;
-  top: 25%;
-  left: -40vw;
+  left: -50vw;
   user-select: none;
 }
 
 .about-text {
+  /* font-family: 'Oswald', sans-serif; */
   position: absolute;
-  top: 29%;
-  font-size: 17px;
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 40vh;
   right: -100vw;
 }
 
@@ -65,9 +72,18 @@ body {
   font-size: 20px;
 }
 
-.title-text {
-  font-weight: 600;
+.project-section-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 185px;
+  font-weight: 500;
+  opacity: 7%;
+  position: absolute;
+  /* left: 88vw; */
+  user-select: none;
+  margin-top: 60vh;
 }
+
+
 
 /* SECTION Projects */
 
@@ -86,13 +102,8 @@ body {
   font-family: 'Oswald', sans-serif;
   position: relative;
 }
-.project-one-title{
- /* font-size: 20px; */
- /* font-weight: 200; */
-}
 
 .project-one-description {
-
   font-weight: 200;
   font-size: 20px;
 }
@@ -103,10 +114,10 @@ body {
 
 .project-one-source {
   font-size: 20px;
+  padding-right: 2em;
 }
 
 .project-one-visit {
-  
   font-size: 20px;
 }
 
@@ -150,20 +161,22 @@ body {
 }
 
 .project-two-text{
+  font-family: 'Oswald', sans-serif;
   position: relative;
 }
 
 .project-two-description {
+  font-weight: 200;
   font-size: 20px;
 }
 
 .project-two-type {
   font-size: 25px;
-  font-weight: 900;
 }
 
 .project-two-source {
   font-size: 20px;
+  padding-right: 2em;
 }
 
 .project-two-visit {
@@ -216,8 +229,17 @@ body {
   opacity: 7%;
   position: absolute;
   top: 50%;
-  left: -40vw;
   user-select: none;
+}
+
+.skills-column p{
+  font-size: 40px;
+  font-weight: 600;
+}
+.skills-column ul li{
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 1vh;
 }
 
 /* SECTION Contact */
@@ -253,4 +275,8 @@ textarea {
   top: 75vh;
   left: 1vw;
   opacity: 55%;
+}
+
+footer a{
+  font-size: 22px;
 }

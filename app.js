@@ -92,6 +92,9 @@ next()
 let aboutTitle = document.getElementById('about-title')
 let aboutText = document.getElementById('about-text')
 
+// Project Section Title
+let projectSectionTitle = document.getElementById('project-section-title')
+
 // Project Text One
 let projectOneText = document.getElementById('project-one-text')
 
@@ -121,10 +124,13 @@ window.addEventListener('scroll', function () {
   // ABOUT
   if (viewValue <= 90) {
     // @ts-ignore
-    aboutTitle.style.left = ((viewValue * .15)) + 'vw'
-    // @ts-ignore
     aboutText.style.right = ((viewValue * .15) - 2.5) + 'vw'
   }
+  // @ts-ignore
+  aboutTitle.style.left = ((viewValue * .15)) + 'vw'
+    // @ts-ignore
+    projectSectionTitle.style.right = ((viewValue * .2) - 15) + "vw"
+  
   //PROJECT ONE
   if (viewValue >= 205 && viewValue < 360) {
     { // NOTE //text
@@ -159,9 +165,9 @@ window.addEventListener('scroll', function () {
     }
   }
   //SKILLS 
-  if (viewValue >= 650){
+  if (viewValue >= 640) {
     console.log("skills slider");
     // @ts-ignore
-    skillsTitle.style.left = ((viewValue * .9)- ((650 * .9)+40)) + 'vw'
+    skillsTitle.style.left = ((viewValue * .9) - ((640 * .9) + 20)) + 'vw'
   }
 })
