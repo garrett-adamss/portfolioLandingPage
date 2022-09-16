@@ -116,6 +116,9 @@ let projectTwoImgFour = document.getElementById('project-two-img-four')
 //Skills 
 let skillsTitle = document.getElementById('skills-title')
 
+//Contact
+let contactTitle = document.getElementById('contact-title')
+
 window.addEventListener('scroll', function () {
   let pxValue = window.scrollY; //px
 
@@ -169,5 +172,8 @@ window.addEventListener('scroll', function () {
     console.log("skills slider");
     // @ts-ignore
     skillsTitle.style.left = ((viewValue * .9) - ((640 * .9) + 20)) + 'vw'
+    // @ts-ignore
+    contactTitle.style.right = ((viewValue * .9) - ((640 * .9)+ 70)) + 'vw'
   }
+
 })
