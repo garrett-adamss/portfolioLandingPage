@@ -325,17 +325,17 @@ body {
   }
 }
 
+@media only screen and (max-width: 970px){
+    .header a{
+        display: none;
+      }
+}
 
 /* Mobile Styling */
-/* heres a big  green comments so I can see where my mobile styling starts so I don't have to keep scrolling though all this code to find it */
 @media only screen and (max-width: 768px) {
   /* * {
     outline: .5px solid red;
   } */
-
-  header a {
-    font-size: small;
-  }
 
   /* SECTION About Me */
   .about-me {
