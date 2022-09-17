@@ -131,9 +131,9 @@ window.addEventListener('scroll', function () {
   }
   // @ts-ignore
   aboutTitle.style.left = ((viewValue * .15)) + 'vw'
-    // @ts-ignore
-    projectSectionTitle.style.right = ((viewValue * .2) - 15) + "vw"
-  
+  // @ts-ignore
+  projectSectionTitle.style.right = ((viewValue * .2) - 15) + "vw"
+
   //PROJECT ONE
   if (viewValue >= 205 && viewValue < 360) {
     { // NOTE //text
@@ -173,7 +173,45 @@ window.addEventListener('scroll', function () {
     // @ts-ignore
     skillsTitle.style.left = ((viewValue * .9) - ((640 * .9) + 20)) + 'vw'
     // @ts-ignore
-    contactTitle.style.right = ((viewValue * .9) - ((640 * .9)+ 70)) + 'vw'
+    contactTitle.style.right = ((viewValue * .9) - ((640 * .9) + 70)) + 'vw'
   }
+})
 
+window.addEventListener("touchmove", function (){
+  console.log('touchmove working')
+  let viewValue = (100 * (window.scrollY)) / window.innerHeight
+  console.log("[viewValue in vh] :", viewValue)
+    //PROJECT ONE
+    if (viewValue >= 205 && viewValue < 360) {
+      { // NOTE //text
+        // @ts-ignore
+        projectOneText.style.top = ((viewValue - 205)) + 'vh'
+        //photos
+        // @ts-ignore Title //56
+        projectOneImgOne.style.top = (((viewValue) * .3) - ((205 * .3) - 25)) + 'vh';
+        // @ts-ignore Title //61
+        projectOneImgTwo.style.top = (((viewValue) * .25) - ((205 * .25) - 81)) + 'vh'
+        // @ts-ignore Title //31
+        projectOneImgThree.style.top = (((viewValue) * .4) - ((205 * .4) - 51)) + 'vh'
+        // @ts-ignore Title //104
+        projectOneImgFour.style.top = (((viewValue) * .45) - ((205 * .45) - 94)) + 'vh'
+      }
+    }
+    //Project Two
+    if (viewValue >= 447 && viewValue < 592) {
+      console.log("RUNNING PROJECT TWO");
+      { // NOTE Text
+        // @ts-ignore
+        projectTwoText.style.top = ((viewValue - 447)) + 'vh'
+        //photoe
+        // @ts-ignore Title //56
+        projectTwoImgOne.style.top = ((viewValue * .3) - ((447 * .3) - 25)) + 'vh';
+        // @ts-ignore Title //61
+        projectTwoImgTwo.style.top = ((viewValue * .25) - ((447 * .25) - 81)) + 'vh'
+        // @ts-ignore Title //31
+        projectTwoImgThree.style.top = ((viewValue * .4) - ((447 * .4) - 51)) + 'vh'
+        // @ts-ignore Title //104
+        projectTwoImgFour.style.top = ((viewValue * .45) - ((447 * .45) - 94)) + 'vh'
+      }
+    }
 })

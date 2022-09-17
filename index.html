@@ -22,11 +22,11 @@
 
     <header>
         <div class="header row align-items-center">
-            <h2 class="col-8 title"><b>Portfolio</b></h2>
-            <a href="#AboutMe" class="nav-title tags col-1">About me</a>
-            <a href="#Projects" class="nav-title tags col-1">Projects</a>
-            <a href="#Skills" class="nav-title tags col-1">Skills</a>
-            <a href="#Contact" class="nav-title tags col-1">Contact</a>
+            <h2 class="col-md-8 col-4 title"><b>Portfolio</b></h2>
+            <a href="#AboutMe" class="nav-title tags col-md-1 col-2">About me</a>
+            <a href="#Projects" class="nav-title tags col-md-1 col-2">Projects</a>
+            <a href="#Skills" class="nav-title tags col-md-1 col-2">Skills</a>
+            <a href="#Contact" class="nav-title tags col-md-1 col-2">Contact</a>
         </div>
     </header>
 
@@ -51,7 +51,7 @@
         <div id="AboutMe" class="container-fluid about-me">
             <div class="row align-items-center about-group">
                 <h1 class="about-title" id="about-title">ABOUT ME</h1>
-                <p class="about-text col-7" id="about-text"><b>
+                <p class="about-text col-md-7 col-12" id="about-text"><b>
                         Passionate Full Stack developer who is well versed in multiple languages, and frameworks.
                         Continuously pushing myself to learn something new.
                         Experienced with working on a team of developers using SCRUM.
@@ -69,7 +69,7 @@
         <div id="Projects" class="projects">
             <div class="project-one">
                 <div class="row">
-                    <div class="col-md-5 project-one-text" id="project-one-text">
+                    <div class="col-md-5 col-12 project-one-text" id="project-one-text">
                         <h1 class="project-one-title"> Trackr</h1>
                         <p class="project-one-description"> Track your score over
                             multiple different games, and compare your scores using a leader board system. Creating a
@@ -88,10 +88,11 @@
                     <div class="col-md-7 project-one-photos">
                         <!-- NOTE Order in reverse for correct layering & CSS + JavaScript reasons 
                                     one is the top photo and four is the bottom photo -->
-                        <img class="project-one-img-four" id="project-one-img-four" src="photos/inspire-home.png">
-                        <img class="project-one-img-three" id="project-one-img-three" src="photos/inspire-home.png">
-                        <img class="project-one-img-two" id="project-one-img-two" src="photos/inspire-home.png">
-                        <img class="project-one-img-one" id="project-one-img-one" src="photos/inspire-home.png">
+                        <img class="project-one-img-four" id="project-one-img-four" src="photos/Trackr-Profile.png">
+                        <img class="project-one-img-three" id="project-one-img-three"
+                            src="photos/Trackr-LeaderBoard.png">
+                        <img class="project-one-img-two" id="project-one-img-two" src="photos/Trackr-GamePage.png">
+                        <img class="project-one-img-one" id="project-one-img-one" src="photos/Trackr-home.png">
                     </div>
                 </div>
             </div>
@@ -100,9 +101,11 @@
         <div id="Projects" class="projects">
             <div class="project-two">
                 <div class="row">
-                    <div class="project-two-text col-5" id="project-two-text">
+                    <div class="project-two-text col-md-5" id="project-two-text">
                         <h1 class="project-two-title"> Instahooman</h1>
-                        <p class="project-two-description"> A social media style platform built, with a small team. This application was built during a Hackathon, in which it was started and completed within a 15-hour period. Our team used SCRUM principles to utilize our time wisely <br>Built with
+                        <p class="project-two-description"> A social media style platform built, with a small team. This
+                            application was built during a Hackathon, in which it was started and completed within a
+                            15-hour period. Our team used SCRUM principles to utilize our time wisely <br>Built with
                             MVC Framework and Node.js</p>
                         <div class="d-flex align-items-center justify-content-left">
                             <a class="project-two-source" href="https://github.com/tylertruman/instahoomantest">
@@ -130,8 +133,8 @@
         <div id="Skills" class="skills container-fluid">
             <div class="row justify-content-around offset-md-1">
                 <h1 class="skills-title" id="skills-title">MY SKILLS</h1>
-                <div class="col-md-5 skills-column">
-                    <p>Frontend skills</p>
+                <div class="col-md-5 col-12 skills-column">
+                    <p>Front-end skills</p>
                     <ul class="column">
                         <li>JavaScript</li>
                         <li>Vue.js</li>
@@ -139,41 +142,41 @@
                         <li>CSS</li>
                     </ul>
                 </div>
-                <div class="col-md-5 skills-column">
-                    <p>Backend skills</p>
+                <div class="col-md-5 col-12 skills-column">
+                    <p>Back-end skills</p>
                     <ul>
                         <li>C#</li>
                         <li>MySql</li>
                         <li>Node.js</li>
                         <li>MongoDB</li>
                     </ul>
-
-
-
                 </div>
             </div>
-
         </div>
 
         <!-- SECTION Contact -->
         <div id="Contact" class="contact container-fluid">
             <h1 class="contact-title" id="contact-title">CONTACT</h1>
             <div class="d-flex justify-content-center">
-                <a href="tel:5622938735">
-                    <img class="contact-img" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png" alt="Email">
+                <a class="col-md-2 col-6" href="tel:5622938735">
+                    <img class="contact-img" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"
+                        alt="Email">
                 </a>
-                <a href="mailto:garrettadamsdev@gmail.com">
-                    <img class="contact-img" src="https://www.pngall.com/wp-content/uploads/2016/05/Phone-Download-PNG.png"
-                        alt="Phone">
+                <a class="col-md-2 col-6" href="mailto:garrettadamsdev@gmail.com">
+                    <img class="contact-img"
+                        src="https://www.pngall.com/wp-content/uploads/2016/05/Phone-Download-PNG.png" alt="Phone">
                 </a>
-                <a href="https://drive.google.com/file/d/1lfmi9zcuUgm-P2kNbpJ5uKWIabnQF9oI/view?usp=sharing">
+                <a class="col-md-2 col-6"
+                    href="https://drive.google.com/file/d/1lfmi9zcuUgm-P2kNbpJ5uKWIabnQF9oI/view?usp=sharing">
                     <img class="contact-img" src="https://cdn-icons-png.flaticon.com/512/85/85047.png" alt="Resume">
                 </a>
-                <a href="https://github.com/garrett-adamss">
+                <a class="col-md-2 col-6" href="https://github.com/garrett-adamss">
                     <img class="contact-img" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
                 </a>
-                <a href="https://www.linkedin.com/in/garrett-adamss/">
-                    <img class="contact-img" src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt="LinkedIn">
+                <a class="col-md-2 col-6" href="https://www.linkedin.com/in/garrett-adamss/">
+                    <img class="contact-img"
+                        src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
+                        alt="LinkedIn">
                 </a>
             </div>
         </div>
@@ -182,12 +185,12 @@
 
     <footer>
         <div class="footer-text d-flex align-items-center justify-content-center">
-            <p>This website was built by me, check out the  
+            <p>This website was built by me, check out the
                 <a class="footer-source" href="https://github.com/garrett-adamss/portfolioLandingPage">
                     &lt;source code/&gt;
                 </a>
             </p>
-           
+
         </div>
     </footer>
 
