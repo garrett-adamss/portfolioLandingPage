@@ -339,10 +339,7 @@ body {
 
 /* Mobile Styling */
 @media only screen and (max-width: 768px) {
-  * {
-    outline: .5px solid red;
-  }
-
+  
   .logos {
     display: none;
 
