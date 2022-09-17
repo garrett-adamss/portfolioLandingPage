@@ -1,10 +1,16 @@
 /* @import "./assets/scss/main.scss"; */
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
 
+main {
+  font-family: 'Roboto Mono', monospace
+}
+
+.header{
+  font-family: 'Roboto Mono', monospace;
+}
 
 header {
   padding: 30px;
-  font-family: 'Roboto Mono', monospace;
 }
 
 a {
@@ -16,10 +22,6 @@ a:hover {
   color: black;
 }
 
-main {
-  font-family: 'Roboto Mono', monospace
-}
-
 footer {
   font-family: 'Roboto Mono', monospace;
 }
@@ -27,18 +29,6 @@ footer {
 body {
   overflow-x: hidden;
   width: 100%;
-}
-
-/* SECTION Github/LinkedIn */
-.logo-img {
-  height: 4em;
-}
-
-.logos {
-  position: fixed;
-  top: 75vh;
-  left: 1vw;
-  opacity: 55%;
 }
 
 .home {
@@ -56,6 +46,18 @@ body {
 
 /* Desktop Styling */
 @media only screen and (min-width: 768px) {
+
+  /* SECTION Github/LinkedIn */
+  .logo-img {
+    height: 4em;
+  }
+
+  .logos {
+    position: fixed;
+    top: 75vh;
+    left: 1vw;
+    opacity: 55%;
+  }
 
   /* SECTION About Me */
   .about-me {
@@ -115,7 +117,7 @@ body {
   }
 
   .project-one-text {
-    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
     position: relative;
     max-height: 100vh;
   }
@@ -146,6 +148,10 @@ body {
   .project-one-photos {
     position: relative;
     height: 277vh;
+  }
+
+  .project-one-gif{
+    display: none;
   }
 
   .project-one-img-one {
@@ -183,13 +189,13 @@ body {
   }
 
   .project-two-text {
-    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
     position: relative;
     max-height: 100vh;
   }
 
   .project-two-description {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 20px;
   }
 
@@ -244,6 +250,10 @@ body {
     left: 15vw;
   }
 
+  .project-two-gif{
+    display: none;
+  }
+  
   /* SECTION Skills */
   .skills {
     height: 140vh;
@@ -320,22 +330,24 @@ body {
     transform: translateY(-10px);
   }
 
-  .mobile-hidden{
+  .mobile-hidden {
     display: none;
   }
 }
 
-@media only screen and (max-width: 970px){
-    .header a{
-        display: none;
-      }
+@media only screen and (max-width: 970px) {
+  .header a {
+    display: none;
+  }
 }
 
 /* Mobile Styling */
 @media only screen and (max-width: 768px) {
-  /* * {
-    outline: .5px solid red;
-  } */
+
+  .logos {
+    display: none;
+
+  }
 
   /* SECTION About Me */
   .about-me {
@@ -349,7 +361,7 @@ body {
 
   .about-title {
     font-family: 'Oswald', sans-serif;
-    font-size: 70px;
+    font-size: 64px;
     font-weight: 500;
     opacity: 7%;
     user-select: none;
@@ -357,7 +369,7 @@ body {
 
   .about-text {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 15px;
   }
 
   .info-text {
@@ -372,41 +384,37 @@ body {
     user-select: none;
     margin-top: 35vh;
   }
-  .header a{
+
+  .header a {
     display: none;
   }
 
   /* SECTION Projects */
 
-  .projects {
-    height: 240vh;
-  }
-
   .project-one {
-    height: 120vh;
+    height: 80vh;
   }
 
-  .project-one .row{
+  .project-one .row {
     max-width: 97%;
   }
 
   .project-one-text {
-    font-family: 'Oswald', sans-serif;
     max-height: 100vh;
     margin-top: 3vh;
   }
 
   .project-one-description {
     font-weight: 200;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .project-one-type {
-    font-size: 25px;
+    font-size: 18px;
   }
 
   .project-one-source {
-    font-size: 20px;
+    font-size: 16px;
     transition: transform 250ms;
   }
 
@@ -420,49 +428,41 @@ body {
 
   .project-one-photos {
     position: relative;
-    height: 277vh;
+    height: 33vh;
     max-width: 97%;
   }
 
   .project-one-img-one {
-    position: absolute;
-    height: 216px;
-    top: 25vh;
-    left: 3vw;
+    display: none;
   }
 
   .project-one-img-two {
-    position: absolute;
-    height: 216px;
-    top: 81vh;
-    left: 5vw;
+    display: none;
   }
 
   .project-one-img-three {
-    position: absolute;
-    height: 216px;
-    top: 51vh;
-    left: 25vw;
+    display: none;
   }
 
   .project-one-img-four {
-    position: absolute;
-    height: 216px;
-    top: 94vh;
-    left: 15vw;
+    display: none;
   }
 
-/* Project Two */
+  .project-one-gif{
+    height: 278px;
+  }
+
+  /* Project Two */
 
   .project-two {
-    height: 130vh;
+    height: 98vh;
   }
-  .project-two .row{
+
+  .project-two .row {
     max-width: 97%;
   }
 
   .project-two-text {
-    font-family: 'Oswald', sans-serif;
     position: relative;
     max-height: 100vh;
     padding-top: 3vh;
@@ -470,16 +470,15 @@ body {
 
   .project-two-description {
     font-weight: 200;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .project-two-type {
-    font-size: 25px;
+    font-size: 18px;
   }
 
   .project-two-source {
-    font-size: 20px;
-    /* padding-right: 2em; */
+    font-size: 16px;
     transition: transform 250ms;
   }
 
@@ -493,36 +492,29 @@ body {
 
   .project-two-photos {
     position: relative;
-    height: 277vh;
+    height: 29vh;
     max-width: 97%;
   }
 
   .project-two-img-one {
-    position: absolute;
-    height: 216px;
-    top: 25vh;
-    left: 3vw;
+    display: none;
   }
 
   .project-two-img-two {
-    position: absolute;
-    height: 216px;
-    top: 81vh;
-    left: 5vw;
+    display: none;
   }
 
   .project-two-img-three {
-    position: absolute;
-    height: 216px;
-    top: 51vh;
-    left: 7vw;
+    display: none;
   }
 
   .project-two-img-four {
-    position: absolute;
-    height: 216px;
-    top: 94vh;
-    left: 7.5vw;
+    display: none;
+  }
+
+  .project-two-gif{
+    height: 227px;
+    margin-top: 2vh;
   }
 
   /* SECTION Skills */
@@ -546,18 +538,20 @@ body {
     margin-top: 1vh;
   }
 
-   /* SECTION Contact */
-   .contact{
+  /* SECTION Contact */
+  .contact {
     margin-top: 30vh;
-   }
-   .justify-mobile {
+    margin-bottom: 20vh;
+  }
+
+  .justify-mobile {
     justify-content: space-around;
     align-items: center;
   }
 
   .contact-title {
     font-family: 'Oswald', sans-serif;
-    font-size:76px;
+    font-size: 76px;
     font-weight: 500;
     opacity: 7%;
     user-select: none;
@@ -579,11 +573,11 @@ body {
     transform: translateY(-10px);
   }
 
-  .mobile-hidden{
+  .mobile-hidden {
     display: inline;
   }
 
-  footer{
+  footer {
     display: none;
   }
 
