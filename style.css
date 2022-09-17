@@ -1,4 +1,4 @@
-@import "./assets/scss/main.scss";
+/* @import "./assets/scss/main.scss"; */
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
 
 
@@ -53,6 +53,8 @@ body {
   font-weight: 600;
 }
 
+
+/* Desktop Styling */
 @media only screen and (min-width: 768px) {
 
   /* SECTION About Me */
@@ -305,7 +307,7 @@ body {
 
   /* SECTION footer */
   .footer-text {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   footer a {
@@ -317,14 +319,19 @@ body {
     color: white;
     transform: translateY(-10px);
   }
+
+  .mobile-hidden{
+    display: none;
+  }
 }
 
-/* Mobile Styling */
 
+/* Mobile Styling */
+/* heres a big  green comments so I can see where my mobile styling starts so I don't have to keep scrolling though all this code to find it */
 @media only screen and (max-width: 768px) {
-  * {
+  /* * {
     outline: .5px solid red;
-  }
+  } */
 
   header a {
     font-size: small;
@@ -365,24 +372,28 @@ body {
     user-select: none;
     margin-top: 35vh;
   }
+  .header a{
+    display: none;
+  }
 
   /* SECTION Projects */
 
-  /* Titles are position absolute to the parents div  */
   .projects {
-    height: 220vh;
+    height: 240vh;
   }
 
   .project-one {
     height: 120vh;
-    margin-left: 2vh;
-    /* padding-top: 13vh; */
+  }
+
+  .project-one .row{
+    max-width: 97%;
   }
 
   .project-one-text {
     font-family: 'Oswald', sans-serif;
-    position: relative;
     max-height: 100vh;
+    margin-top: 3vh;
   }
 
   .project-one-description {
@@ -396,7 +407,6 @@ body {
 
   .project-one-source {
     font-size: 20px;
-    padding-right: 2em;
     transition: transform 250ms;
   }
 
@@ -411,6 +421,7 @@ body {
   .project-one-photos {
     position: relative;
     height: 277vh;
+    max-width: 97%;
   }
 
   .project-one-img-one {
@@ -441,16 +452,20 @@ body {
     left: 15vw;
   }
 
+/* Project Two */
+
   .project-two {
     height: 130vh;
-    padding-left: 10vh;
-    padding-top: 36vh;
+  }
+  .project-two .row{
+    max-width: 97%;
   }
 
   .project-two-text {
     font-family: 'Oswald', sans-serif;
     position: relative;
     max-height: 100vh;
+    padding-top: 3vh;
   }
 
   .project-two-description {
@@ -464,7 +479,7 @@ body {
 
   .project-two-source {
     font-size: 20px;
-    padding-right: 2em;
+    /* padding-right: 2em; */
     transition: transform 250ms;
   }
 
@@ -479,6 +494,7 @@ body {
   .project-two-photos {
     position: relative;
     height: 277vh;
+    max-width: 97%;
   }
 
   .project-two-img-one {
@@ -499,14 +515,76 @@ body {
     position: absolute;
     height: 216px;
     top: 51vh;
-    left: 25vw;
+    left: 7vw;
   }
 
   .project-two-img-four {
     position: absolute;
     height: 216px;
     top: 94vh;
-    left: 15vw;
+    left: 7.5vw;
+  }
+
+  /* SECTION Skills */
+  .skills-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    opacity: 7%;
+    user-select: none;
+    margin-top: 13vh;
+  }
+
+  .skills-column p {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .skills-column ul li {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 1vh;
+  }
+
+   /* SECTION Contact */
+   .contact{
+    margin-top: 30vh;
+   }
+   .justify-mobile {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contact-title {
+    font-family: 'Oswald', sans-serif;
+    font-size:76px;
+    font-weight: 500;
+    opacity: 7%;
+    user-select: none;
+  }
+
+  .contact {
+    min-height: 70vh;
+  }
+
+  .contact-img {
+    margin-top: 8vh;
+    height: 10vh;
+    object-fit: scale-down;
+    object-position: center;
+    transition: transform 250ms;
+  }
+
+  .contact-img:hover {
+    transform: translateY(-10px);
+  }
+
+  .mobile-hidden{
+    display: inline;
+  }
+
+  footer{
+    display: none;
   }
 
 }
