@@ -7,11 +7,7 @@ body {
 
 body.dark {
   background-color: #353535;
-  color: white;
-}
-
-a.dark{
-  color: white;
+  color: white!important;
 }
 
 main {
@@ -34,6 +30,7 @@ a {
 a:hover {
   color: black;
 }
+
 
 footer {
   font-family: 'Roboto Mono', monospace;
