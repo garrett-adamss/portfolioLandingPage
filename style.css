@@ -1,14 +1,14 @@
 /* @import "./assets/scss/main.scss"; */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
 
-body {
+/* body {
   transition: background 0.2s linear;
 }
 
 body.dark {
   background-color: #353535;
   color: white!important;
-}
+} */
 
 main {
   font-family: 'Roboto Mono', monospace
