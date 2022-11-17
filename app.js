@@ -1,10 +1,19 @@
+// SECTION Theme toggle
+
+// const checkbox = document.getElementById('checkbox');
+
+// checkbox.addEventListener('change', ()=>{
+//   document.body.classList.toggle('dark');
+// })
+
+// TESTER
 
 // SECTION Text Scramble
 class TextScramble {
   constructor(el) {
     this.el = el
     // this.chars = '!<>-_\\/[]{}—=+*^?#________'
-    this.chars = 'asdfghjklqwertyuiopzxcv'
+    this.chars = 'qwerty1234567890'
     this.update = this.update.bind(this)
   }
   setText(newText) {
