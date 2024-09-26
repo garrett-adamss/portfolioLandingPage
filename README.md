@@ -1,35 +1,65 @@
 # Garrett Adams Portfolio
 
-Welcome to my personal portfolio! This repository contains the source code for my portfolio website, where I showcase my projects, skills, and experiences.
+This is the portfolio website for **Garrett Adams**, showcasing his skills, projects, and experience as a software engineer. The website includes sections such as "About Me," "Experience," "Skills," and "Contact." It also highlights two major projects: **Jenn AI** and **Save Space**.
 
-## About Me
+## Live Site
+You can view the live site at: [**garrett-adamss.dev**](#)
 
-Passionate Full Stack developer who is well versed in multiple languages, and frameworks. Continuously pushing myself to learn something new. Experienced with working on a team of developers using SCRUM. Eager to join a company to develop cutting-edge software.
-## Portfolio Link
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Sections](#sections)
+- [Usage](#usage)
+- [Contact](#contact)
 
-🌐 [Visit my Portfolio](https://garrettadamss.com)
+## Introduction
+This portfolio was designed to highlight Garrett's work as a software engineer, particularly in web development and AI integration. The website is responsive and includes links to relevant projects, source code, and social media profiles.
 
-## Technologies 
+## Features
+- **Responsive Design:** The layout adjusts for different screen sizes and devices.
+- **Project Showcase:** Highlighting key projects such as **Jenn AI** and **Save Space** with detailed descriptions.
+- **Skills Section:** Lists relevant programming languages, frameworks, and tools.
+- **Contact Section:** Provides easy access to Garrett’s email, phone, LinkedIn, and GitHub.
 
-- JavaScript, React.js, Vue.js, C#, .NET, MySQL, SQL
+## Technologies Used
+- **HTML5**
+- **CSS3**
+- **Bootstrap 5**
+- **JavaScript**
+- **GitHub Pages / Vercel (Hosting)**
 
-## Projects
+## Sections
 
-Here are some highlights of my projects:
+### Header
+Contains navigation links to various sections of the website including About Me, Experience, Skills, and Contact.
 
-1. **Trackr**
-   - Description: [Track your score over multiple different games, and compare your scores using a leader board system. Creating a match allows you to search players, choose players, and select a winner.
-Built with Vue.js and Node.js]
-   - [[Link to the project repository or live demo](https://github.com/garrett-adamss/Trackr)]
+### About Me
+Provides a brief overview of Garrett’s background and expertise in web development, AI, and scalable solutions.
 
-2. **Keepr**
-   - Description: [A pintrest style application I built within the course of a week. Users can post their own photos that display on their profile as well as on the home page. Users can also create collections of photos where they can store any photos they want and decide whether that collection is public or private.
-Built with Vue.js, C#, and MySql]
-   - [[Link to the project repository or live demo](https://github.com/garrett-adamss/keepr)]
+### Experience
+Showcases Garrett's Experience:
+1. **Jenn AI:** An AI-powered sales assistant built using React and Python.
+2. **Save Space:** A collaborative photo-sharing platform built with Next.js, Supabase, and AWS.
+
+### Skills
+Displays Garrett's proficiency in various programming languages, frameworks, and tools, including JavaScript, Python, React.js, Django, and AWS.
+
+### Contact
+Includes Garrett’s email, phone number, resume download, and social media links for easy access.
+
+## Usage
+The website is structured using HTML and styled with Bootstrap. You can add more projects or modify existing content by editing the relevant sections in the `index.html` file.
+
+To update project details:
+1. Go to the **Experience** section in `index.html`.
+2. Modify the HTML to reflect new projects or skills.
+
+For hosting the website on GitHub Pages or Vercel, refer to their respective documentation.
 
 ## Contact
+For inquiries, feel free to contact me through the following:
 
-Feel free to reach out to me! I'm open to collaboration and always eager to connect with fellow developers and enthusiasts.
-
-- Email: [garrettadamsdev@gmail.com]
-- LinkedIn: [[LinkedIn Profile](https://www.linkedin.com/in/garrett-adamss/)]
+- **Email:** [garrettadamsdev@gmail.com](mailto:garrettadamsdev@gmail.com)
+- **LinkedIn:** [linkedin.com/in/garrett-adamss](https://www.linkedin.com/in/garrett-adamss/)
+- **GitHub:** [github.com/garrett-adamss](https://github.com/garrett-adamss)

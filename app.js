@@ -74,11 +74,11 @@ class TextScramble {
 
 // Text
 const phrases = [
-  'with an eye for design',
-  'looking for an opportunity',
-  'with an eagerness to learn',
-  'that loves a challenge',
-  'who\'s always learning something new'
+  'who thrives on solving complex problems.',
+  'passionate about building scalable, user-friendly applications.',
+  'dedicated to continuous learning and innovation.',
+  'who excels in optimizing performance and efficiency.',
+  'committed to delivering high-quality, maintainable code.'
 
 ]
 
