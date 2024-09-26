@@ -166,7 +166,8 @@ body {
 
   .project-one-img-one {
     position: absolute;
-    height: 360px;
+    /* height: 360px; */
+    height: 540px;
     top: 25vh;
     left: 3vw;
   }
@@ -174,20 +175,22 @@ body {
   .project-one-img-two {
     position: absolute;
     height: 389px;
-    top: 81vh;
+    top: 100vh;
     left: 5vw;
   }
 
   .project-one-img-three {
     position: absolute;
-    height: 276px;
+    /* height: 276px; */
+    height: 376px;
     top: 51vh;
     left: 25vw;
   }
 
   .project-one-img-four {
     position: absolute;
-    height: 300px;
+    /* height: 300px; */
+    height: 480px;
     top: 94vh;
     left: 15vw;
   }
@@ -234,29 +237,33 @@ body {
 
   .project-two-img-one {
     position: absolute;
-    height: 500px;
+    /* height: 500px; */
+    height: 610px;
     top: 25vh;
     left: 3vw;
   }
 
   .project-two-img-two {
     position: absolute;
-    height: 389px;
+    /* height: 389px; */
+    height: 426px;
     top: 81vh;
     left: 5vw;
   }
 
   .project-two-img-three {
     position: absolute;
-    height: 276px;
+    /* height: 276px; */
+    height: 335px;
     top: 51vh;
     left: 25vw;
   }
 
   .project-two-img-four {
     position: absolute;
-    height: 300px;
-    top: 94vh;
+    /* height: 300px; */
+    height: 500px;
+    top: 85vh;
     left: 15vw;
   }
 

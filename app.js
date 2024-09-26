@@ -162,7 +162,7 @@ window.addEventListener('scroll', function () {
       // @ts-ignore Title //56
       projectOneImgOne.style.top = (((viewValue) * .3) - ((205 * .3) - 25)) + 'vh';
       // @ts-ignore Title //61
-      projectOneImgTwo.style.top = (((viewValue) * .25) - ((205 * .25) - 81)) + 'vh'
+      projectOneImgTwo.style.top = (((viewValue) * .25) - ((205 * .25) - 100)) + 'vh'
       // @ts-ignore Title //31
       projectOneImgThree.style.top = (((viewValue) * .4) - ((205 * .4) - 51)) + 'vh'
       // @ts-ignore Title //104
@@ -183,7 +183,7 @@ window.addEventListener('scroll', function () {
       // @ts-ignore Title //31
       projectTwoImgThree.style.top = ((viewValue * .4) - ((447 * .4) - 51)) + 'vh'
       // @ts-ignore Title //104
-      projectTwoImgFour.style.top = ((viewValue * .45) - ((447 * .45) - 94)) + 'vh'
+      projectTwoImgFour.style.top = ((viewValue * .45) - ((447 * .45) - 85)) + 'vh'
     }
   }
   //SKILLS 
